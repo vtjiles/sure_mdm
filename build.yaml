@@ -1,0 +1,74 @@
+targets:
+  $default:
+    sources:
+      - lib/**
+      - swagger/**
+      - $package$
+    builders:
+      swagger_dart_code_generator:
+        options:
+          # cut_from_model_names: '[Model, $Groups]'
+          # default_values_map:
+          #   - type_name: ''
+          input_folder: 'swagger/'
+          output_folder: 'lib/src/generated/'
+          separate_models: true
+          with_base_url: true
+          # with_converter: true
+          # exclude_paths:
+          #   - "/QRCode/{GroupId}/default/{IsHttps}/{DeviceNameType}"
+          #   - "/device"
+          #   - "/device/{DeviceId}"
+          #   - "/devicename"
+          #   - "/deviceassignment"
+          #   - "/getdevicelistbygroupid/{GroupID}"
+          #   - "/installedapp/android/{DeviceId}/device"
+          #   - "/devicelog/{DeviceId}"
+          #   - "/calllog/{DeviceID}"
+          #   - "/smslog/{DeviceID}"
+          #   - "/datausagepolicy/{DeviceID}/{StartDate}/{EndDate}"
+          #   - "/unapproveddevice"
+          #   - "/deviceapproval"
+          #   - "/blacklistdevice"
+          #   - "/BlacklistDevice/{deviceIds}"
+          #   - "/whitelistdevice"
+          #   - "/location"
+          #   - "/preapproveddevice/GetDeviceList"
+          #   - "/PreapprovedDevice"
+          #   - "/PreapprovedDevice/DeleteDevice"
+          #   - "/dynamicjob"
+          #   - "/jobassignment"
+          #   - "/dynamicjobqueue"
+          #   - "/jobqueue/{DeviceID}/{ShowAll}"
+          #   - "/jobqueueerrorhistory/{DeviceID}/{isSuccess}"
+          #   - "/jobqueueerrorhistory/{DeviceID}"
+          #   - "/jobqueue"
+          #   - "/blacklistdevice/{deviceIds}"
+          #   - "/group"
+          #   - "/group/1/getAll"
+          #   - "/group/{GroupId}"
+          #   - "/jobassignment/{JobId}/{GroupId}"
+          #   - "/jobassignment/{JobId}/{GroupId}/{ServerScheduleTime}/{RecursiveScheduleTime}/{DownloadType}"
+          #   - "/jobassignment/group"
+          #   - "/GroupJobQueue/{GroupId}/{Type}"
+          #   - "/tags"
+          #   - "/jobassignment/{JobId}/{TagId}/{ServerScheduleTime}/{RecursiveScheduleTime}/{DownloadType}/true"
+          #   - "/jobassignment/tags"
+          #   - "/tags/{TagID}"
+          #   - "/DeviceAssignment/TagsAssignToDevices"
+          #   - "/job/runscript"
+          #   - "/job"
+          #   - "/upload/uploadfile"
+          #   - "/jobfolder/all"
+          #   - "/jobfolder"
+          #   - "/jobfolder/{folderID}"
+          #   - "/report"
+          #   - "/report/{Type}/1"
+          #   - "/report/{ReportID}"
+          #   - "/message/{Offset}/{Limit}/{Order}/{SortColumn}/{Search}"
+          #   - "/message/{messageId}"
+          #   - "/message"
+          #   - "/Message/{days}/customdelete"
+          #   - "/customer"
+          #   - "/version"
+          #   - "/account"
